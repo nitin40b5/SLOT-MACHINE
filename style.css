@@ -1,0 +1,87 @@
+:root{
+    --speed :5;
+}
+*{
+    margin: 0%;
+    padding-top: 0%;
+}
+header{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(https://cdn.lifehack.org/wp-content/uploads/2013/06/There__s_No_Wallpaper_by_E_M_I_L_A.jpg);
+}
+
+.machine{
+    background-color: gray;
+    border: dashed brown 3px;
+    height: 300px;
+    width: 900px;
+    margin: 50px;  
+    display:inline-flex;
+}
+
+.btn1{
+    height: 1.5cm;
+    width: 2cm;
+    font-size: 20px;
+    margin: 20px;
+    background-color: lightcyan;
+    color: darkblue;
+    border-radius: 10px;
+}
+
+.btn2{
+    display: inline-flex;
+}
+#inpnum{
+    font-size: 30px;
+    width: 2cm;
+    height: 1cm;
+    background-color:lightcyan;
+    color: darkblue;
+    text-align: center;
+}
+.inp{
+    text-align: center;
+}
+
+.slot{
+    background-color: beige;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border: solid darkblue 2px;
+    line-height: 250px;
+    text-align: center;
+    font-size: 100px;
+    overflow: hidden;
+}
+
+.slot > .value{
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: infinite;
+    animation-name: topspin;
+    position: relative;
+}
+
+@keyframes topspin{
+    from{
+        /* transform: translateY(-150px); */
+        top: -200px
+    }
+    to{
+        /* transform: translateY(150px); */
+        top: 200px;
+    }
+}
+
+.tit{
+    text-align: center;
+    font-size: 2cm;
+    margin-top: 3cm;
+    color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
